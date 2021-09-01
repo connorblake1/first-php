@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta author="Connor Blake"/>
+<title>Connor's Mad Lib Maker</title>
+<style type="text/css">
+	h3 {text-align: center; font-size: 36px;}
+	body {background-color: lightgoldenrodyellow;}
+</style>
+</head>
+<body>
+<h3>Connor's Madlib Maker</h3>
+<form method="get" action="MadlibForm.php">
+What is your name?
+<input type="text" name="name1"><br/>
+
+Choose a background picture for your Mad Lib<br />
+<input type="radio" name="background" value="woodedTrail" checked />Wooded Trail<br />
+<input type="radio" name="background" value="waterfall"/>Waterfall<br />
+<input type="radio" name="background" value="woodedMountains"/>Mountain<br />
+<input type="radio" name="background" value="canyon"/>Canyon<br />
+<input type="radio" name="background" value="valley"/>Valley<br />
+Enter the types of words specified for each blank and click submit to make the madlib.
+<ol>
+<li>
+Weather adjective <br/>
+<select name="weatherADJ">
+	<option value="sunny">Sunny</option>
+	<option value="rainy">Rainy</option>
+	<option value="cloudy">Cloudy</option>
+	<option value="hot">Hot</option>
+	<option value="cold">Cold</option>
+</select>
+</li>
+<li>
+Adjective
+<input type="text" name="natureName"/></li>
+<li>
+Plural animal
+<input type="text" name="plurAnimal"/></li>
+<li>
+Verb ending in -ing involving sound
+<input type="text" name="soundING"/></li>
+<li>
+Person in the room
+<input type="text" name="personinRoom"/></li>
+<li>
+Verb (ending with -ing)
+<input type="text" name="movingVerb"/></li>
+<li>
+Color
+<input type="color" name="color1"/> <br />
+Name this color (capitalize)
+<input type="text" name="colorD"></li>
+<li>
+Animal
+<input type="text" name="mammal"/></li>
+<li>
+Exclamation
+<input type="text" name="exclam"/></li>
+<li>
+Large noun
+<input type="text" name="largeObject"/></li>
+<li>
+A number between 1 and 25
+<input type="number" name="number1" min="1" max="25"></li>
+<li>
+Plural food item
+<input type="text" name="plurFood"/></li>
+<li>
+Beverage
+<input type="text" name="beverage"/></li>
+<li>
+Adjective
+<input type="text" name="ADJ1"/></li>
+<li>
+Verb (infinitive)
+<input type="text" name="VERB1"/></li>
+</ol>
+<input type="reset" value="Reset form">
+<input type="submit" value="Make MadLib">
+</form>
+</body>
+</html>
